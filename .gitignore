@@ -1,0 +1,25 @@
+# Ignore virtual environment
+env/
+venv/
+
+# Ignore Python-specific files
+*.pyc
+__pycache__/
+celerybeat.pid
+.Python
+eggs/
+.eggs/
+
+# Ignore Django-specific files
+*.log
+local_settings.py
+db.sqlite3
+/media
+/static
+
+# Ignore IDE files (e.g., VS Code)
+.vscode/
+.idea/
+
+# Ignore operating system files
+.DS_Store
