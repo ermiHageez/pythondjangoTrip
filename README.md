@@ -13,7 +13,7 @@ A Django-based backend system for managing trip destinations, user bookings, and
 🏗️ Tech Stack
 Component	Technology
 Backend Framework	Django
-Database	PostgreSQL / SQLite (for development)
+Database	PostgreSQL 
 API Architecture	Django REST Framework (if available)
 Environment	Python 3.8+
 📌 Project Structure
@@ -50,17 +50,6 @@ python manage.py runserver
 Server runs at:
 👉 http://127.0.0.1:8000/
 
-🔐 Environment Variables
-
-Create a .env file in the project root and add:
-
-SECRET_KEY=your_secret_key_here
-DEBUG=True
-DATABASE_URL=sqlite:///db.sqlite3
-
-
-Change DEBUG=False before deploying to production.
-
 📡 API Endpoints (Sample)
 Method	Endpoint	Description
 POST	/api/auth/register/	Register user
@@ -68,40 +57,7 @@ POST	/api/auth/login/	Login user
 GET	/api/destinations/	List available destinations
 POST	/api/bookings/	Create a booking
 
-(Modify according to your actual implemented routes)
-
-🧪 Testing
-python manage.py test
-
-✅ Deployment Guide (Optional)
-
-Use Docker, Railway, DigitalOcean, or Hosting Service with:
-
-DEBUG=False
-
-Proper ALLOWED_HOSTS
-
-Gunicorn + Nginx (recommended for Linux servers)
-
-📌 Roadmap
-
-Add Payment Integration
-
-Add Admin dashboard & role-based access control
-
-Add Trip search & filtering
-
-Mobile app integration (React Native or Flutter)
-
-Add automated email notifications
-
-🤝 Contributing
-
-Feel free to fork the repository & submit pull requests!
-Issues and feature suggestions are welcome.
-
 📧 Contact
-
 Developer: Ermiyas Eshetu
 GitHub: https://github.com/ermiHageez
 
